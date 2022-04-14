@@ -1,25 +1,35 @@
 import datetime
+import Class_test
 
-def test():
-    print("test")
-def test1(a):
-    print(a)
-def sum(a,b):
-    result = a + b
-    return result
-def test2(aaa):
-    result = None
-    if aaa >= 5:
-        result = True
-    else:
-        result = False
-    return result
+a = Class_test.Person("Nishi")
+a.familyname = "ワーゲン"
+print(a.familyname)
 
-result = test2(6)
-print(result)
+b = Class_test.Person("Nishi")
+b.familyname = "アウディ"
+print(b.familyname)
+print(a.familyname)
 
-now = datetime.datetime.now()
-print(now)
+# def test():
+#     print("test")
+# def test1(a):
+#     print(a)
+# def sum(a,b):
+#     result = a + b
+#     return result
+# def test2(aaa):
+#     result = None
+#     if aaa >= 5:
+#         result = True
+#     else:
+#         result = False
+#     return result
+
+# result = test2(6)
+# print(result)
+
+# now = datetime.datetime.now()
+# print(now)
 
 # lst = [1,2,3,4,100,"egg"]
 
@@ -33,4 +43,7 @@ print(now)
 
 # displayResult = sum(1,4)
 # print(displayResult)
+
+
+
 
