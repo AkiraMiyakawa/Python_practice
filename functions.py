@@ -13,30 +13,24 @@ def calc(x,y):
          print("入力した数字は割り切れません")
 
 
-
-
 # Xの入力（文字と負の入力を除外）
 
 X = input("A. 1番目の入力: 0より大きい値を入力してください: ")
-while X.isdigit == False:
-        X = input("A. 1番目の入力: 0より大きい値を入力してください: ")    
+
+while X.isdigit() == False:
+        X = input("X. 数字以外は入力できません。1番目の入力: 0より大きい値を入力してください: ")    
 # intに変換
 input_x = int(X)
-
-while input_x < 0:
-        X = input("B. 1番目の入力: 0より大きい値を入力してください: ")    
 print(X,"と入力されました")
 print("次の入力です")
 
-# yの入力（文字と負の入力を除外）
-Y = input("A. 2番目の入力: 0より大きい値を入力してください: ")
-while Y.isdigit == False:
-        Y = input("A. 2番目の入力: 0より大きい値を入力してください: ")    
 
+# yの入力（文字と負の入力を除外）
+Y = input("Y. 2番目の入力: 0より大きい値を入力してください: ")
+while Y.isdigit() == False:
+        Y = input("Y. 数字以外は入力できません　2番目の入力: 0より大きい値を入力してください: ")    
 # intに変換
 input_y = int(Y)
-while input_y < 0:
-        Y = input("B. 2番目の入力: 0より大きい値を入力してください: ")    
 print(Y,"と入力されました")
 print("計算します...")
 
