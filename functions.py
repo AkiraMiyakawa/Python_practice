@@ -1,8 +1,11 @@
 
+
+from re import I
+from sys import int_info
+
+
 # 1番目に入力した数字を二番目に入力した数字で割り、
 # 得られた値が整数である場合にその値を表示する関数です
-
-
 
 def calc(x,y):
     a = x / y
@@ -12,6 +15,11 @@ def calc(x,y):
     else:
          print("入力した数字は割り切れません")
 
+# 偶数のみを取りだす関数
+def even(aaa):
+# 変数Iの分だけ、もしリストの数字が割り切れる場合だけaaaに格納
+    aaa = [i for i in aaa if i % 2 == 0]
+    print(aaa)
 
 # Xの入力（文字と負の入力を除外）
 
@@ -34,5 +42,13 @@ input_y = int(Y)
 print(Y,"と入力されました")
 print("計算します...")
 
-
 calc(input_x,input_y)
+
+
+str = input("X. 好きな数字を入力してください。複数入力する場合は、半角スペースで区切ってください ")
+
+# 変数yを用意し、str.splitで得られた個々の文字をint型に変換する
+y = [int(x) for x in str.split()]
+
+# even呼び出し
+even(y)
